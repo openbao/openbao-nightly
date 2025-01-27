@@ -941,6 +941,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/helper-plugin-utils@npm:^7.25.9":
+  version: 7.26.5
+  resolution: "@babel/helper-plugin-utils@npm:7.26.5"
+  checksum: 4771fbb1711c624c62d12deabc2ed7435a6e6994b6ce09d5ede1bc1bf19be59c3775461a1e693bdd596af865685e87bb2abc778f62ceadc1b2095a8e2aa74180
+  languageName: node
+  linkType: hard
+
 "@babel/helper-remap-async-to-generator@npm:^7.16.0, @babel/helper-remap-async-to-generator@npm:^7.16.4":
   version: 7.16.4
   resolution: "@babel/helper-remap-async-to-generator@npm:7.16.4"
@@ -2056,6 +2063,17 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: cdbb7f92e43a85291845e38910aa1bed0c3e489ae2da187b2e9604d1f2769f72b712a5a8b5e45223c7f5856927557bc314e86f7f1832a47405fdf5e492baa164
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-syntax-decorators@npm:^7.23.3":
+  version: 7.25.9
+  resolution: "@babel/plugin-syntax-decorators@npm:7.25.9"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.25.9
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: aaf58b17e6aa08f41f93897daa93c601a486233a0375b4231799fc5c4e7c98480aaad3c1c44cf391a62e428c5f6546f76488a1023a4036bb87cd61fa79f1173b
   languageName: node
   linkType: hard
 
@@ -4223,7 +4241,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@embroider/addon-shim@npm:^1.9.0":
+"@embroider/addon-shim@npm:^1.8.7, @embroider/addon-shim@npm:^1.9.0":
   version: 1.9.0
   resolution: "@embroider/addon-shim@npm:1.9.0"
   dependencies:
@@ -7580,7 +7598,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-import-util@npm:^2.0.0":
+"babel-import-util@npm:^2.0.0, babel-import-util@npm:^2.0.1":
   version: 2.1.1
   resolution: "babel-import-util@npm:2.1.1"
   checksum: a2aa8fd8c20ae2a9a89bd729791223761f565b1d717098546545021b0d6fcac6f20cc0d85fdcb06d19d0dd4b60d431c2e032dfcb8b137a114a9b554290b86fae
@@ -11625,6 +11643,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"decorator-transforms@npm:^1.0.1":
+  version: 1.2.1
+  resolution: "decorator-transforms@npm:1.2.1"
+  dependencies:
+    "@babel/plugin-syntax-decorators": ^7.23.3
+    babel-import-util: ^2.0.1
+  checksum: af060a1258bd138a5c0da197378c57bbc48076cfde51cbc2f2186a243634ec5f0ea827b540b7365faaaa2593ea1670dc1f531ba0a7131ad97edb80a7502fdaec
+  languageName: node
+  linkType: hard
+
 "deep-is@npm:^0.1.3, deep-is@npm:~0.1.3":
   version: 0.1.3
   resolution: "deep-is@npm:0.1.3"
@@ -13206,19 +13234,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-concurrency@npm:2.3.4":
-  version: 2.3.4
-  resolution: "ember-concurrency@npm:2.3.4"
+"ember-concurrency@npm:4.0.2":
+  version: 4.0.2
+  resolution: "ember-concurrency@npm:4.0.2"
   dependencies:
     "@babel/helper-plugin-utils": ^7.12.13
     "@babel/types": ^7.12.13
-    "@glimmer/tracking": ^1.0.4
-    ember-cli-babel: ^7.26.11
-    ember-cli-babel-plugin-helpers: ^1.1.1
-    ember-cli-htmlbars: ^5.7.1
-    ember-compatibility-helpers: ^1.2.0
-    ember-destroyable-polyfill: ^2.0.2
-  checksum: 14b68d1da5575b14dc038af8146b8de29f5b0b961ca57275d1930cf77f8b0d8ba20105d40a5755b79c3f8ad65449195beb94029a687c72a07486c5024ab98154
+    "@embroider/addon-shim": ^1.8.7
+    decorator-transforms: ^1.0.1
+  peerDependencies:
+    "@glimmer/tracking": ^1.1.2
+    "@glint/template": ">= 1.0.0"
+    ember-source: ^3.28.0 || ^4.0.0 || >=5.0.0
+  peerDependenciesMeta:
+    "@glint/template":
+      optional: true
+  checksum: 09912f7231411f37eb8ca928aca9820b8d5f08cb8d6438450346663000c92f01ce1e2bb4250f20216420cff849affa64c1342e556b5d430b928337977bd6b130
   languageName: node
   linkType: hard
 
@@ -25058,7 +25089,7 @@ __metadata:
     ember-cli-terser: ^4.0.2
     ember-cli-typescript: ^5.2.1
     ember-composable-helpers: 5.0.0
-    ember-concurrency: 2.3.4
+    ember-concurrency: 4.0.2
     ember-copy: 2.0.1
     ember-d3: ^0.5.1
     ember-data: ~4.5.0

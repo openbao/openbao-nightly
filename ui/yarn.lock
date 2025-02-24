@@ -21180,12 +21180,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.6.2":
-  version: 2.6.2
-  resolution: "prettier@npm:2.6.2"
+"prettier@npm:3.5.2":
+  version: 3.5.2
+  resolution: "prettier@npm:3.5.2"
   bin:
-    prettier: bin-prettier.js
-  checksum: 48d08dde8e9fb1f5bccdd205baa7f192e9fc8bc98f86e1b97d919de804e28c806b0e6cc685e4a88211aa7987fa9668f30baae19580d87ced3ed0f2ec6572106f
+    prettier: bin/prettier.cjs
+  checksum: 77adb755fca32a4f4176d02f69766e3a1ced9dd7e8df721c9aa0daee3328c2ab3845ae56fa2cda0c37936f5ff4f3cf4c3cf4dfcbc0d021192356b2af1c5cb7f0
   languageName: node
   linkType: hard
 
@@ -25108,7 +25108,7 @@ __metadata:
     npm-run-all: ^4.1.5
     pkijs: ^2.2.2
     pretender: ^3.4.3
-    prettier: 2.6.2
+    prettier: 3.5.2
     prettier-eslint-cli: ^7.1.0
     pvutils: ^1.0.17
     qunit: ^2.19.1

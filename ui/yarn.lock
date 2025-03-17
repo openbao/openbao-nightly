@@ -6270,6 +6270,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@noble/hashes@npm:^1.4.0":
+  version: 1.7.1
+  resolution: "@noble/hashes@npm:1.7.1"
+  checksum: 4f1b56428a10323feef17e4f437c9093556cb18db06f94d254043fadb69c3da8475f96eb3f8322d41e8670117d7486475a8875e68265c2839f60fd03edd6a616
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.4":
   version: 2.1.4
   resolution: "@nodelib/fs.scandir@npm:2.1.4"
@@ -8414,12 +8421,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"asn1js@npm:^2.1.1, asn1js@npm:^2.2.0":
+"asn1js@npm:^2.2.0":
   version: 2.2.0
   resolution: "asn1js@npm:2.2.0"
   dependencies:
     pvutils: latest
   checksum: 936e233b7453d7e9805c1637f02da7145d73d5158105710f9bc79efaf51aa935a8bce87b0efed59da4c32fc304bfe28eb22fad1e1bf2f926478e110c6f3da240
+  languageName: node
+  linkType: hard
+
+"asn1js@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "asn1js@npm:3.0.5"
+  dependencies:
+    pvtsutils: ^1.3.2
+    pvutils: ^1.1.3
+    tslib: ^2.4.0
+  checksum: 3b6af1bbadd5762ef8ead5daf2f6bda1bc9e23bc825c4dcc996aa1f9521ad7390a64028565d95d98090d69c8431f004c71cccb866004759169d7c203cf9075eb
   languageName: node
   linkType: hard
 
@@ -11123,10 +11141,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bytestreamjs@npm:^1.0.29":
-  version: 1.0.29
-  resolution: "bytestreamjs@npm:1.0.29"
-  checksum: 0fd5e74ad0c6694e53f5fcf303f2124c128e4f837249e4361be8c3e022208558a27c353b03b3157a9d1ff15455e09041faa1134e03bcc914bbe6816eafc0362b
+"bytestreamjs@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "bytestreamjs@npm:2.0.1"
+  checksum: db4cb039794675a0ec1f097d228e4897378cdf5f794dca04fc3bff63efb466524fcfac95e59e89e928822a80fad7574734c02b8eace9e841d8599da43c82768a
   languageName: node
   linkType: hard
 
@@ -23237,14 +23255,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pkijs@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "pkijs@npm:2.2.2"
+"pkijs@npm:^3.2.5":
+  version: 3.2.5
+  resolution: "pkijs@npm:3.2.5"
   dependencies:
-    asn1js: ^2.1.1
-    bytestreamjs: ^1.0.29
-    pvutils: ^1.0.17
-  checksum: 92664bc4b7378200f74d7faf32a80365058d79f22b27f9a83b10e1e7684892a17657ff65c106e7c48be6d79b76545149e949229ae42a6456d0e447b9872a26e5
+    "@noble/hashes": ^1.4.0
+    asn1js: ^3.0.5
+    bytestreamjs: ^2.0.0
+    pvtsutils: ^1.3.2
+    pvutils: ^1.1.3
+    tslib: ^2.6.3
+  checksum: a2a96ff05bd079553418443e2468d01542ae94f795f64cfb05378b20cfeb8a10a9b7ef309dfc3926bc5655855d1b11bfae704bc0f3e51dc449a498d12ad03d75
   languageName: node
   linkType: hard
 
@@ -23682,10 +23703,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pvtsutils@npm:^1.3.2":
+  version: 1.3.6
+  resolution: "pvtsutils@npm:1.3.6"
+  dependencies:
+    tslib: ^2.8.1
+  checksum: 97b023b46d7b95bff004f8340efc465c1d995f35d7e97a2ef2e28d5e160f5ca47b48f42463b6be92b4341452a6b8c555feb2b1eb59ee90b97bd5d6fc86ffb186
+  languageName: node
+  linkType: hard
+
 "pvutils@latest, pvutils@npm:^1.0.17":
   version: 1.0.17
   resolution: "pvutils@npm:1.0.17"
   checksum: 370cc6c7ed2cddeb97e85339f4cac06cc07e3195774b0b8707a7994db0acd73451745cc57209a2bc6d4138b9b14d5ab0335e3614743a91010a74db597428dfe8
+  languageName: node
+  linkType: hard
+
+"pvutils@npm:^1.1.3":
+  version: 1.1.3
+  resolution: "pvutils@npm:1.1.3"
+  checksum: 2ee26a9e5176c348977d6ec00d8ee80bff62f51743b1c5fe8abeeb4c5d29d9959cdfe0ce146707a9e6801bce88190fed3002d720b072dc87d031c692820b44c9
   languageName: node
   linkType: hard
 
@@ -26940,6 +26977,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.4.0, tslib@npm:^2.6.3, tslib@npm:^2.8.1":
+  version: 2.8.1
+  resolution: "tslib@npm:2.8.1"
+  checksum: e4aba30e632b8c8902b47587fd13345e2827fa639e7c3121074d5ee0880723282411a8838f830b55100cbe4517672f84a2472667d355b81e8af165a55dc6203a
+  languageName: node
+  linkType: hard
+
 "tsutils@npm:^3.21.0":
   version: 3.21.0
   resolution: "tsutils@npm:3.21.0"
@@ -27719,7 +27763,7 @@ __metadata:
     node-notifier: ^8.0.1
     normalize.css: 4.1.1
     npm-run-all: ^4.1.5
-    pkijs: ^2.2.2
+    pkijs: ^3.2.5
     pretender: ^3.4.3
     prettier: 2.6.2
     prettier-eslint-cli: ^7.1.0

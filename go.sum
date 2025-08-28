@@ -643,8 +643,8 @@ github.com/mediocregopher/radix/v4 v4.1.4 h1:Uze6DEbEAvL+VHXUEu/EDBTkUk5CLct5h3n
 github.com/mediocregopher/radix/v4 v4.1.4/go.mod h1:ajchozX/6ELmydxWeWM6xCFHVpZ4+67LXHOTOVR0nCE=
 github.com/mholt/acmez/v3 v3.1.2 h1:auob8J/0FhmdClQicvJvuDavgd5ezwLBfKuYmynhYzc=
 github.com/mholt/acmez/v3 v3.1.2/go.mod h1:L1wOU06KKvq7tswuMDwKdcHeKpFFgkppZy/y0DFxagQ=
-github.com/michaelklishin/rabbit-hole/v3 v3.1.0 h1:ar9/AQedbJzmCaPL8axu18Gm+zvpQk9xjzJQ+daKlHQ=
-github.com/michaelklishin/rabbit-hole/v3 v3.1.0/go.mod h1:3pmYEJhHyKcMMYkmWBz1kX4gD0o/ptUgbZqAsbOygQI=
+github.com/michaelklishin/rabbit-hole/v3 v3.2.0 h1:N4YdHFj36MP5059Csze9B4TTZPS6j6HPJm9bBeZgvJk=
+github.com/michaelklishin/rabbit-hole/v3 v3.2.0/go.mod h1:LTyucfaAV/Y++Y6aVfAmsc6lvKw3y0WEyQa+yPAXcXc=
 github.com/miekg/dns v1.0.14/go.mod h1:W1PPwlIAgtquWBMBEV9nkV9Cazfe8ScdGz/Lj7v3Nrg=
 github.com/miekg/dns v1.1.41/go.mod h1:p6aan82bvRIyn+zDIv9xYNUpwa73JcSh9BKwknJysuI=
 github.com/miekg/dns v1.1.63 h1:8M5aAw6OMZfFXTT7K5V0Eu5YiiL8l7nUAkyN6C9YwaY=

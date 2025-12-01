@@ -26,6 +26,7 @@ replace github.com/boltdb/bolt => ./helper/stubbolt
 require (
 	cloud.google.com/go/monitoring v1.24.3
 	github.com/ProtonMail/go-crypto v1.3.0
+	github.com/armon/go-metrics v0.4.1
 	github.com/armon/go-radix v1.0.0
 	github.com/caddyserver/certmagic v0.25.0
 	github.com/cenkalti/backoff/v4 v4.3.0
@@ -140,7 +141,7 @@ require (
 	golang.org/x/net v0.46.0
 	golang.org/x/oauth2 v0.33.0
 	golang.org/x/sync v0.18.0
-	golang.org/x/sys v0.37.0
+	golang.org/x/sys v0.38.0
 	golang.org/x/term v0.36.0
 	golang.org/x/text v0.30.0
 	google.golang.org/api v0.254.0
@@ -197,7 +198,6 @@ require (
 	github.com/aliyun/alibaba-cloud-sdk-go v1.62.301 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.0 // indirect
 	github.com/apparentlymart/go-textseg/v15 v15.0.0 // indirect
-	github.com/armon/go-metrics v0.4.1 // indirect
 	github.com/aws/aws-sdk-go v1.55.6 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.33.0 // indirect
 	github.com/aws/aws-sdk-go-v2/config v1.29.1 // indirect
